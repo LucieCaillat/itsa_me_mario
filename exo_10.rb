@@ -1,4 +1,6 @@
-puts "En quelle année es tu née ?"
+puts "En quelle année es tu né ?"
 print "--> "
-year_of_bird = gets.chomp.to_i
-puts "Tu avais donc #{ 2017 - year_of_bird } ans en 2017."
+date_birth = gets.chomp.to_i
+(Time.now.year - date_birth).times do |j|
+	puts "En #{date_birth + j + 1}, tu avais #{ j + 1 } ans."	
+end

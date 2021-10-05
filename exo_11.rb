@@ -1,6 +1,6 @@
-puts "écris un nombre"
+puts "Quel âge as-tu ?"
 print "--> "
-number = gets.chomp.to_i
-number.times do
-puts "Salut, ça farte ? "
+age = gets.chomp.to_i
+(age).times do |j|
+		puts "Il y a #{age - j} ans tu avais #{ j } ans."
 end

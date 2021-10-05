@@ -1,6 +1,6 @@
 puts "écris un nombre :"
 print "--> "
 number = gets.chomp.to_i
-(number + 1 ).times do |i|
-puts number - i
+number.times do |i|
+puts i + 1
 end
